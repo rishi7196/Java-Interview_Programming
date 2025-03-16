@@ -3,7 +3,7 @@ package Program;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PrintArrayAppearstwice {
+public class CountFrequencyOfArray {
 
     public static void main(String[] args) {
 
