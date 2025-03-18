@@ -1,11 +1,7 @@
 package Program;
-
 import java.util.HashMap;
-
 public class FirstRepeatedNonRepeated {
-
     public static void main(String[] args) {
-
         String str = "Rishi Kumar";
         char[] ch = str.toUpperCase().toCharArray();
         HashMap<Character,Integer>hash= new HashMap<>();
@@ -15,7 +11,6 @@ public class FirstRepeatedNonRepeated {
                 hash.put(c, hash.getOrDefault(c, 0) + 1);
             }
         }
-
         // Find the first non-repeated character
         for (char c : ch) {
             if (hash.get(c) == 1) {
@@ -23,7 +18,6 @@ public class FirstRepeatedNonRepeated {
                 break;
             }
         }
-
         // Find the first repeated character
         for (char c : ch) {
             if (hash.get(c) > 1) {
