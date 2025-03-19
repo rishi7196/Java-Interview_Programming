@@ -10,21 +10,22 @@ public class CountDuplicateCharcterOfString {
         String str = "Rishi Kumar";
         char[] arr = str.toUpperCase().toCharArray();
         HashMap<Character, Integer> map = new HashMap<>();
-        for (Character c : arr) {
-            if (map.containsKey(c))
-                map.put(c, map.get(c)+ 1);
-            else {
-                map.put(c, 1);
-            }
-        }
-        Set<Map.Entry<Character,Integer>> entry= map.entrySet();
-        for(Map.Entry<Character,Integer>Entry:entry)
+        for(Character c: arr)
         {
-            if(Entry.getValue()>1)
+            if(c!=' ')
             {
-                System.out.println(Entry.getKey()+ " "+Entry.getValue());
+                map.put(c,map.getOrDefault(c,0)+1);
             }
         }
+        for(Map.Entry<Character,Integer>entry : map.entrySet())
+        {
+            if(entry.getValue()>1)
+            {
+                System.out.println(entry.getKey()+ " "+entry.getValue());
+            }
+        }
+
+
 
     }
 }

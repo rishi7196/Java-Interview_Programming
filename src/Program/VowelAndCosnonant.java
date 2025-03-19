@@ -12,7 +12,7 @@ public class VowelAndCosnonant {
         {
             char ch=str.charAt(i);
             if(Character.isLetter(ch));
-            if(ch=='a' ||ch == 'e' || ch == 'i' || ch == 'o' ||ch == '0')
+            if(ch=='a' ||ch == 'e' || ch == 'i' || ch == 'o' ||ch == 'u')
             vowel++;
             else
                 constant++;

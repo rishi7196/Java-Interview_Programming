@@ -1,24 +1,39 @@
 package Program2;
 
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class DemoTest {
-
     public static void main(String[] args) {
-        String str = "selenium";
-        System.out.println(isFirstRepeatedChar(str));
-    }
 
-    static Character isFirstRepeatedChar(String str)
-    {
-        Set<Character> set= new HashSet<>();
-        for(Character c: str.toCharArray())
-        {
-            if(!set.add(c)) return c;
+        String str = "selenium";
+        char[] ch = str.toCharArray();
+        Map<Character, Integer> map = new HashMap<>();
+        for (Character c : ch) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+
         }
-        return null;
+        //non repeated
+        for(char c: ch) {
+            if (map.get(c) == 1) {
+                System.out.println("First non repeated character is " + str + " is :" + c);
+                break;
+            }
+        }
+            for(char c: ch)
+            {
+                if(map.get(c)>1)
+                {
+                    System.out.println("First  repeated character is "+str+ " is :"+c);
+                    break;
+                }
+        }
+
     }
 }
+
+
+
+
+
 

@@ -5,7 +5,7 @@ public class StringTrasnform1 {
 
         String input= "12ANCD23#$%%";
         String output = input.replaceAll("[^A-Za-z]", "")
-                + input.replaceAll("[^0-9]", "")
+               // + input.replaceAll("[^0-9]", "")
                 .replaceFirst("(\\d+).*", "$1");
         System.out.println(output);
     }
