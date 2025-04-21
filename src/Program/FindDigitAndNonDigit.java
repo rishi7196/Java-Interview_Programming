@@ -1,5 +1,4 @@
 package Program;
-import java.util.Scanner;
 public class FindDigitAndNonDigit {
     public static void main(String[] args) {
 
