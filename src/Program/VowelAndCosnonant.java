@@ -1,7 +1,4 @@
 package Program;
-
-import java.lang.invoke.VarHandle;
-
 public class VowelAndCosnonant {
     public static void main(String[] args) {
 

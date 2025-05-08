@@ -9,13 +9,13 @@ public class FindArrayOfCharacters {
         char[] array1 = {'a', 'b', 'c', 'd', 'e'};
         char[] array2 = {'c', 'd', 'e', 'f', 'g'};
 
-        Set<Character> set1 = new HashSet<>();
-        Set<Character> duplicates = new HashSet<>();
+        Set<Character> set = new HashSet<>();
+       // Set<Character> duplicates = new HashSet<>();
 
-        for (char c : array1) set1.add(c);
-        for (char c : array2) if (set1.contains(c)) duplicates.add(c);
+        for (char c : array1) set.add(c);
+        for (char c : array2) if (set.remove(c)) System.out.print(c);
 
-        System.out.println("Duplicate characters: " + duplicates);
+        //System.out.println("Duplicate characters: " + duplicates);
 
     }
 }
