@@ -6,7 +6,7 @@ public class RotateAnArrayByRight {
     public static void main(String[] args) {
 
         int[] arr = new int[]{1, 2, 0, 4, 5};
-        int n = 2;
+        int n = 3;
 
         for (int i = 0; i < n; i++) {
             int last = arr[arr.length - 1], j;
