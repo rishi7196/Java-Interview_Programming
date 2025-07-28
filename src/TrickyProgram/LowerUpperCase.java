@@ -2,18 +2,15 @@ package TrickyProgram;
 
 
 public class LowerUpperCase {
-    public static String swapCase(String s) {
-        StringBuilder sb = new StringBuilder(s.length());
-        for (char c : s.toCharArray()) {
-            sb.append(Character.isUpperCase(c)
-                      ? Character.toLowerCase(c)
-                      : Character.toUpperCase(c));
-        }
-        return sb.toString();
-    }
-
-    public static void main(String[] args) {
-        String input = "HexAwarE";
-        System.out.println(swapCase(input));  // → hEXaWARe
-    }
+	public static void main(String[] args) {		
+		String s="HexAwarE";
+		StringBuffer sb= new StringBuffer();
+		for(char c:s.toCharArray())
+		{
+			sb.append(Character.isUpperCase(c)
+		    ? Character.toLowerCase(c)//using ternery operator
+		    : Character.toUpperCase(c));
+		}
+		System.out.println(sb.toString());
+	}
 }
