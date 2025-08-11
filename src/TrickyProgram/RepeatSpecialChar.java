@@ -1,6 +1,6 @@
 package TrickyProgram;
 
-public class UpparSpecChar {
+public class RepeatSpecialChar {
 	
 	public static void main(String[] args) {
 		
