@@ -5,8 +5,13 @@ public class FirstLetterUpparString {
 		
 		String str=" i love india";
 		str=str.trim();
-		String res=str.substring(0, 1).toUpperCase()+str.substring(1);
-		System.out.println(res);
+		String[]ch=str.split("\\s");
+		for(String c:ch)
+		{
+			String res=c.substring(0, 1).toUpperCase()+c.substring(1);
+			System.out.print(res+" ");
+		}
+		
 	}
 
 }
