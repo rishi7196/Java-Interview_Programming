@@ -1,6 +1,5 @@
 package String_Program;
 
-import java.Main;
 
 public class ReverseOfFirstAndLast {
 	public static int swapFirstLast(int n) {
