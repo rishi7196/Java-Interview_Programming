@@ -4,15 +4,12 @@ public class PrintTwiceEachCharacter {
 	public static void main(String[] args) {
 		String str = "rishi";
 
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < str.length(); i++) {
-			char ch = str.charAt(i);
-			sb.append(ch).append(ch);
+		StringBuffer sb = new StringBuffer();
+		for (char c : str.toCharArray()) {
+			sb.append(c).append(c);
 		}
 		System.out.println(sb.toString());
 
 	}
-
-	
 
 }
