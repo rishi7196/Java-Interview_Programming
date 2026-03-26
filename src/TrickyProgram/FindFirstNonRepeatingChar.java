@@ -15,12 +15,12 @@ public class FindFirstNonRepeatingChar {
 			map.put(c, map.getOrDefault(c, 0)+1);
 			
 		}
-		for(int i=0;i<str.length();i++)
+		for(char c: str.toCharArray())
 		{
-			if(map.get(str.charAt(i))==1)
+			if(map.get(c)==1)
 			{
-				System.out.println("Last repeating charachter is ::"+str.charAt(i));
-				return;
+				System.out.println("first non repeating charachter is ::"+c);
+				break;
 				
 			}
 		}
