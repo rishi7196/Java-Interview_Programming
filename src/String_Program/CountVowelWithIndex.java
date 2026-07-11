@@ -16,6 +16,7 @@ public class CountVowelWithIndex
                map.put(ch,map.get(ch)+1);
 
         }
+    
         for(Map.Entry<Character,Integer>entry : map.entrySet())
         {
             if(entry.getValue()>0)
