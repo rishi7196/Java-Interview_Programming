@@ -1,24 +1,27 @@
 package TrickyProgram;
 
+import java.util.HashMap;
+
 public class LongestString {
 	
 	public static void main(String[] args) {	
-	String str = "Java programming language is powerful";
-    String[] words = str.split("\\s");
-    
-    String longest="";
-    for(String word:words)
-    {
-    	
-    	if(word.length()>longest.length())
-    	{
-    		longest=word;
-    		
-    	}
-    	
-    }
-    System.out.println(longest);
-    }
+		
+		String str="i love you";
+		String[]ch=str.split("\\s");
+		String longest="";
+		for(String c:ch)
+		{
+			if(c.length()>longest.length())
+			{
+				longest=c;
+			}
+			
+		}
+		System.out.println(longest);
+		
+	
+		
+	}
 
     
 
