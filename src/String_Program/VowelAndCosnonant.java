@@ -5,9 +5,8 @@ public class VowelAndCosnonant {
         int vowel=0;
         int constant =0;
         String str="Rishi";
-        for(int i=0;i<str.length();i++)
+        for(char ch:str.toCharArray())
         {
-            char ch=str.charAt(i);
             if(Character.isLetter(ch));
             if(ch=='a' ||ch == 'e' || ch == 'i' || ch == 'o' ||ch == 'u')
             vowel++;
